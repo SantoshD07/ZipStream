@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Apache Directory Contents as Zip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Download Apache Directory Contents as Zip</h2>
+        <p>Click below to download all contents of your Apache directory as a zip file.</p>
+        <button onclick="downloadZip()">Download Zip</button>
+    </div>
+
+    <script>
+        function downloadZip() {
+            // Redirect to the PHP script that generates the zip file
+            window.location.href = 'download_directory.php';
+        }
+    </script>
+</body>
+</html>
